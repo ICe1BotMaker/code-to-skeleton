@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: url("../img/dddepth-302.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.window {
+    background: rgb(31, 36, 40);
+    width: 1500px;
+    height: 750px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
+.window > div {
+    height: 100%;
+    flex: 1;
+}
+
+.window .input {
+    background: #24292e;
+}
+
+.window .input .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.window .input .buttons .download-button {
+    padding: 10px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background: #1f8ae7;
+    color: #151e29;
+    font-size: 14px;
+    font-family: Consolas, 'Courier New', monospace;
+    cursor: pointer;
+}
+
+.window .input .buttons .generate-button {
+    padding: 10px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background: #3a4249;
+    color: #98a2ac;
+    font-size: 14px;
+    font-family: Consolas, 'Courier New', monospace;
+    cursor: pointer;
+}
+
+.window .input .language {
+    display: none;
+}
+
+.window .input textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    color: #e1e4e8;
+    background: #24292e;
+    padding: 50px;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 16px;
+    resize: none;
+    height: 650px;
+}
+
+.window .input textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.window .output {
+    padding: 50px;
+}
+
+.window .output .output-bg {
+    width: 100%;
+    height: 100%;
+    background: url("../img/dddepth-302.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window .output .output-bg .output-window {
+    background: rgb(31, 36, 40);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    padding: 25px;
+    max-width: 400px;
+}
+
+.window .output .output-bg .output-window .output-window-tool {
+    display: flex;
+}
+
+.window .output .output-bg .output-window .output-window-tool span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.window .output .output-bg .output-window .output-window-tool :last-child {
+    margin-right: 0;
+}
+
+.window .output .output-bg .output-window .output-window-tool .output-window-tool-red {
+    background: #ff605c;
+}
+
+.window .output .output-bg .output-window .output-window-tool .output-window-tool-yellow {
+    background: #ffbd44;
+}
+
+.window .output .output-bg .output-window .output-window-tool .output-window-tool-green {
+    background: #00ca4e;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton {
+    margin-top: 20px;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton .output-window-skeleton-line {
+    display: flex;
+    margin-bottom: 5px;
+    height: 15px;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton .output-window-skeleton-line:last-child {
+    margin-bottom: 0;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton .output-window-skeleton-line .output-window-skeleton-line-tag {
+    display: block;
+    height: 15px;
+    background: #e1e4e8;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton .output-window-skeleton-line .output-window-skeleton-line-tag:last-child {
+    margin-right: 0;
+}
+
+.window .output .output-bg .output-window .output-window-skeleton .output-window-skeleton-line .highlight {
+    background: rgb(235, 57, 110);
+}
